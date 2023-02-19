@@ -28,12 +28,27 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird Zazu = new Bird("Zazu", 5, 2, true, false, "hornbill", true, "contour");
+            Console.WriteLine($"{Zazu.Name} is a {Zazu.Type} bird who is {Zazu.Age} years old.\n" +
+                $"He has {Zazu.Legs} legs and {Zazu.FeatherType} feathers. It is also {Zazu.HasBackbone} that \n" +
+                $"he has a backbone, {Zazu.IsProtected} that he is protected, and {Zazu.IsDiurnal} that he is diurnal.\n");
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Reptile Tortoise = new Reptile("Jeffrey", 126, 4, true, true, false, "dry", "shell");
+            Console.WriteLine($"The incredible tortoise named {Tortoise.Name} \n" +
+                $"has lived many lifetimes... {Tortoise.Age} in fact!\n" +
+                $"At the pinnacle of the animal kingdom, {Tortoise.Name} has {Tortoise.Legs} powerful leges \n" +
+                $"and a hard outer {Tortoise.Defense} for defense to survive in his \n" +
+                $"{Tortoise.Environment} environment.\n" +
+                $"It is {Tortoise.HasBackbone} that {Tortoise.Name} has a back bone, \n" +
+                $"{Tortoise.IsColdBlooded} that he is cold blooded, and \n" +
+                $"{Tortoise.HasScales} that he has scales.");
+            
+
         }
     }
 }
